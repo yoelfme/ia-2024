@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--
+    // v0 by Vercel.
+    // https://v0.dev/t/LpzyEGAjSLz
+    -->
+
+    <div class="flex h-screen">
+      <div class="m-auto">
+        <!--
+// v0 by Vercel.
+// https://v0.dev/t/qOsonXgI6cp
+-->
+
+        <div
+          class="max-w-xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg border-2 border-black"
+        >
+          <div class="mb-4">
+            <div class="flex">
+              <input
+                class="flex w-full py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                id="query"
+                placeholder="Ingrese su consulta"
+              />
+              <button
+                id="send"
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 ml-2"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+          <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Resultado</h2>
+            <p id="response" class="text-gray-700"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
